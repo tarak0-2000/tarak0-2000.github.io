@@ -17,8 +17,11 @@ body {
 	color: #444;	/*全体の文字色*/
 	font-family: 'Exo 2', 'Kosugi Maru', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo, Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	font-size: 16px;	/*文字サイズ*/
-	line-height: 1.5;		/*行間*/
+	line-height: 2;		/*行間*/
 	-webkit-text-size-adjust: none;
+}
+h1,h2,h3{
+	line-height: 1.5;
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
 ul {list-style-type: none;}
@@ -46,7 +49,7 @@ h2 {
 	margin-bottom: 20px;
 	font-size: 32px;
 	color: #444;
-
+	word-break: keep-all;
 }
 
 /*h3見出しタグの設定
@@ -55,13 +58,15 @@ h3 {
 	clear: both;
 	font-size: 25px;
 	padding: 0 30px;
+	line-height: 1.5;
+	word-break: keep-all;
 }
 
 /*段落タグ設定
 ---------------------------------------------------------------------------*/
 p {
 	padding: 0px 30px 20px;
-	word-break: break-word;
+	word-break: break-all;
 }
 
 /*ヘッダー
@@ -370,6 +375,14 @@ footer img {
 	#menubar li a:hover {
 		width: 154px;
 		line-height: 154px;
+	}
+
+	.detail-title h2 {
+		font-size: 23px;
+	}
+
+	.description {
+		line-height: 1.5;
 	}
 
 	footer img {
