@@ -182,12 +182,12 @@ footer {
 	clear: both;
 	text-align: center;	/*文字をセンタリング*/
 	padding: 10px 0px;	/*左から、上下、左右への余白*/
-	color: #ccc;		/*文字色*/
+	color: #eee;		/*文字色*/
 	text-shadow: 1px 1px rgba(0,0,0,0.8);	/*テキストの影。右へ、下へ、色(rgba)の設定*/
 	margin-top: -10%;
 }
 footer h2{
-	color: #ccc;
+	color: #eee;
 }
 footer .caption{
 	margin-top: 3%;
