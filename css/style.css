@@ -60,6 +60,7 @@ h3 {
 	padding: 0 30px;
 	line-height: 1.5;
 	word-break: keep-all;
+	word-wrap: break-word;
 }
 
 /*段落タグ設定
