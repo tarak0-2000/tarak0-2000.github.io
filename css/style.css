@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+/*PC・タブレット・スマホ共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+html,body {
+	width: 100%;height: 100%;
+}
+body {
+	background: #23074d;
+	background: -webkit-linear-gradient(to right, #23074d, #cc5333);
+	background: linear-gradient(to right, #23074d, #cc5333);
+	margin: 0px;
+	padding: 0px;
+	color: #444;	/*全体の文字色*/
+	font-family: 'Exo 2', 'Kosugi Maru', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo, Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 16px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	-webkit-text-size-adjust: none;
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {margin: 0px;padding: 0px;font-size: 100%;}
+ul {list-style-type: none;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+
+/*リンクテキスト設定
+---------------------------------------------------------------------------*/
+a {
+	color: #3e6680;	/*リンクテキストの色*/
+	-webkit-transition: 0.5s;	/*マウスオン時の移り変わるまでの時間設定。0.5秒。*/
+	transition: 0.5s;			/*同上*/
+}
+a:hover {
+	color: #d50f26;	/*マウスオン時の文字色*/
+}
+
+.detail-content a{
+	word-break: break-all;
+}
+/*h2見出しタグの設定
+---------------------------------------------------------------------------*/
+h2 {
+	display: inline;
+	clear: both;
+	margin-bottom: 20px;
+	font-size: 32px;
+	color: #444;
+
+}
+
+/*h3見出しタグの設定
+---------------------------------------------------------------------------*/
+h3 {
+	clear: both;
+	font-size: 25px;
+	padding: 0 30px;
+}
+
+/*段落タグ設定
+---------------------------------------------------------------------------*/
+p {
+	padding: 0px 30px 20px;
+	word-break: break-word;
+}
+
+/*ヘッダー
+---------------------------------------------------------------------------*/
+/*headerブロック*/
+header {
+	text-align: center;	/*ヘッダーブロックの内容をセンタリングする設定*/
+	height: 100%;		/*ヘッダーブロックの高さ。画面の高さに合わせる為に100%で指定。*/
+}
+/*タイトル設定*/
+#title {
+	margin-top: 5%;
+	color: #fff;
+	font-size: 50px;
+	text-shadow: 1px 1px rgba(0,0,0,0.8);	/*テキストの影。右へ、下へ。*/
+	opacity: 0.8;	/*透明度80%*/
+}
+#title h2 {
+	color: #fff;
+	font-size: 25px;
+}
+
+/*メニュー
+---------------------------------------------------------------------------*/
+/*メニュー全体を囲むブロック*/
+#menubar {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+/*メニュー１個あたりの設定*/
+#menubar li {
+	display: inline;	/*横並びにする設定*/
+}
+#menubar li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 0.2em;			/*文字感覚を少し広くする設定。広くしないでいいなら、この１行を削除。*/
+	width: 200px;		/*幅。下のline-heightと数字を合わせる。*/
+	line-height: 200px;	/*高さ。上のwidthと数字を合わせる。*/
+	border-radius: 50%;	/*丸くする。*/
+	border: 4px solid #fff;	/*枠線の幅、線種、色*/
+	margin: 0px 20px 10px;
+	text-shadow: 0px 0px 3px rgba(0,0,0,0.6);	/*テキストの影。右に、下に。透明度60%*/
+}
+/*マウスオン時の設定*/
+#menubar li a:hover {
+	/*background-color: rgba( 238, 130, 238, 0.4 );*/
+	color: #fff;
+	width: 220px;
+	line-height: 220px;
+}
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+.contents {
+	overflow: hidden;
+	background: #fff;	/*背景色（古いブラウザ用）*/
+	background: rgba(255,255,255,0.9);	/*背景色*/
+	padding-top: 2%;	/*ボックス内の上にとる余白*/
+	padding-bottom: 5%;	/*ボックス内の下にとる余白*/
+	margin-bottom: 10%;	/*ボックスの下にとる余白*/
+}
+
+/*メインコンテンツ
+---------------------------------------------------------------------------*/
+.main-contents {
+	padding-top: 25px;
+	text-align: center;
+}
+
+.main-contents-profile {
+	padding-top: 25px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.profile-contents {
+	position: relative;
+	width: 80%;
+	float: left;
+
+}
+
+.details-area {
+	padding-top: 5%;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.detail-content {
+	padding-top: 5%;
+	width: 100%;
+}
+
+.pull-left {
+	float: left;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.field {
+	width: 15%;
+}
+
+.description {
+	width: 70%;
+}
+
+/*フッター(ページ最下部のcopyrightのパーツ)設定
+---------------------------------------------------------------------------*/
+footer {
+	clear: both;
+	text-align: center;	/*文字をセンタリング*/
+	padding: 10px 0px;	/*左から、上下、左右への余白*/
+	color: #ccc;		/*文字色*/
+	text-shadow: 1px 1px rgba(0,0,0,0.8);	/*テキストの影。右へ、下へ、色(rgba)の設定*/
+	margin-top: -10%;
+}
+footer h2{
+	color: #ccc;
+}
+footer .caption{
+	margin-top: 3%;
+	margin-bottom: 2%;
+}
+footer a {
+	text-decoration: none;
+	border: none;
+	color: #fff;	/*文字色*/
+}
+footer img {
+	width: 5%;
+	height: 5%;
+}
+
+/*TOPへ戻るボタン
+---------------------------------------------------------------------------*/
+#top-button {
+	text-align: right;
+	display: none;
+}
+#top-button a {
+	position: fixed;		/*画面の右下に固定*/
+	display: inline-block;
+	bottom: 1rem;
+	right: 2rem;
+	width: 45px;			/*幅*/
+	line-height: 45px;		/*高さ*/
+}
+
+/*画像の設定
+---------------------------------------------------------------------------*/
+#bg img {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	filter: blur(1px);/*ぼかし度*/
+	opacity: 0.7;	/*透明度70%*/
+}
+
+.thumbnail {
+	width: 20%;
+	float: left;
+}
+
+.frame {
+	position: relative;
+	display: inline-block;
+	border-radius: 10%;
+	width: 150px;
+	height: 150px;
+	margin: 10px 10px;
+}
+
+.frame:hover {
+	cursor : pointer;	/*マウスオン時のカーソルを指マークにする*/
+}
+
+.frame-text {
+	font-size: x-large;
+	color: #000;
+	padding-top: 15%;
+}
+
+.logo img {
+	height: 50px;
+	padding-top: 1rem;
+	padding-right: 1rem;
+}
+
+/*見出しの設定
+---------------------------------------------------------------------------*/
+.caption {
+	text-align: center;
+}
+
+/*アイコンの設定
+---------------------------------------------------------------------------*/
+.material-icons.web-icon {
+	font-size: 48px;
+	position: relative;
+	top: 0.8rem;
+	left: -0.5rem;
+}
+
+
+
+/*端末を縦向きにした場合の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (orientation: portrait){
+
+	.portrait {display: block;}
+	.landscape {display: none;}
+
+}
+
+
+
+/*端末を横向きにした場合の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (orientation: landscape){
+
+	.portrait {display: none;}
+	.landscape {display: block;}
+
+}
+
+
+/*画面幅1024px以下、かつ、端末を縦向きにした場合の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1024px) and (orientation: portrait){
+	/*タイトル設定
+	---------------------------------------------------------------------------*/
+	#title {
+		margin-top: 25%;
+	}
+
+	.field,
+	.description {
+		width: 100%;
+	}
+
+}
+
+
+
+/*画面幅850px以下、かつ、端末を横向きにした場合の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:850px) and (orientation: landscape){
+	/*タイトル設定
+	---------------------------------------------------------------------------*/
+	#title {
+		margin-top: 3%;
+		font-size: 30px;
+	}
+
+	.field,
+	.description {
+		width: 100%;
+	}
+
+}
+
+
+
+/*画面幅600px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:600px){
+
+	/*段落タグ設定
+	---------------------------------------------------------------------------*/
+	p {
+		padding: 0px 10px 20px;	/*上、左右、下への余白*/
+	}
+
+	/*タイトル設定
+	---------------------------------------------------------------------------*/
+	#title {
+		margin-top: 5%;
+	}
+
+	/*メニュー
+	---------------------------------------------------------------------------*/
+	/*メニュー全体を囲むブロック*/
+	#menubar {
+		top: 70%;		/*ヘッダーブロックに対して上から70%の場所に配置*/
+	}
+
+	/*メニュー１個あたりの設定*/
+	#menubar li a {
+		font-size: 16px;				/*文字サイズ。*/
+		width: 140px;		/*幅。下のline-heightと数字を合わせる。*/
+		line-height: 140px;	/*高さ。上のwidthと数字を合わせる。*/
+	}
+
+	/*マウスオン時の設定*/
+	#menubar li a:hover {
+		width: 154px;
+		line-height: 154px;
+	}
+
+	footer img {
+		width: 15%;
+		height: 15%;
+	}
+
+}
+
+
+
+/*画面幅450px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:450px){
+
+	/*タイトル設定
+	---------------------------------------------------------------------------*/
+	#title {
+		margin-top: 5%;
+	}
+
+	/*メニュー
+	---------------------------------------------------------------------------*/
+	/*メニュー全体を囲むブロック*/
+	#menubar {
+		top: 70%;		/*ヘッダーブロックに対して上から70%の場所に配置*/
+	}
+
+	/*メニュー１個あたりの設定*/
+	#menubar li a {
+		font-size: 14px;	/*文字サイズ。*/
+		width: 100px;		/*幅。下のline-heightと数字を合わせる。*/
+		line-height: 100px;	/*高さ。上のwidthと数字を合わせる。*/
+	}
+
+	/*マウスオン時の設定*/
+	#menubar li a:hover {
+		width: 110px;
+		line-height: 110px;
+	}
+
+}
+
+
+
+/*画面の高さ420px以下、かつ、端末を横向きにした場合の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-height:420px) and (orientation: landscape){
+
+	/*メニュー
+	---------------------------------------------------------------------------*/
+	/*メニュー全体を囲むブロック*/
+	#menubar {
+		top: 38%;		/*ヘッダーブロックに対して上から40%の場所に配置*/
+	}
+
+}

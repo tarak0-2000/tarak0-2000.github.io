@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>Shohei Yamashita's portfolio</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="TARAKO">
+		<meta name="robots" content="noindex">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Shohei Yamashitaのポートフォリオ">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2|Kosugi+Maru&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="title">
+				<h1>Shohei Yamashita's portfolio</h1>
+				<h2>Web engineer.</h1>
+			</div>
+			<nav id="menubar">
+				<ul>
+					<li><a href="#profile">Profile</a></li>
+					<li><a href="#works">Works</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="contents" id="profile">
+
+			<section>
+				<div class="caption">
+					<i class="material-icons web-icon">account_circle</i><h2>Profile</h2>
+				</div>
+				<div class="main-contents-profile">
+					<div class="thumbnail">
+						<img src="img/profile.png" alt="Perl">
+					</div>
+					<div class="profile-contents">
+						<h3>自己紹介</h3>
+						<p>
+							はじめまして。私は<b>山下翔平</b>と申します。<br>
+							幼い頃よりコンピュータが大好きで、プログラミングを独学してきました。<br>
+							Linuxデスクトップ環境を構築して遊んだり、HP＆ゲーム制作なども趣味でやっています。<br>
+							現在はWebエンジニアとして活動しています。
+						</p>
+						<h3>主に使用する技術＆ソフトウェア</h3>
+						<p>
+							<span class="logo">
+								<img src="img/Logo_Perl.png" alt="Perl">
+								<img src="img/Logo_Python.png" alt="Python">
+								<img src="img/Logo_HTML.png" alt="HTML">
+								<img src="img/Logo_CSS.png" alt="CSS">
+								<img src="img/Logo_jQuery.png" alt="jQuery">
+								<img src="img/Logo_SQL.png" alt="SQL">
+								<img src="img/Logo_CentOS.png" alt="CentOS">
+								<img src="img/Logo_ArchLinux.png" alt="ArchLinux">
+								<img src="img/Logo_ATOM.png" alt="ATOM">
+								<img src="img/Logo_Vim.png" alt="Vim">
+							</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!--/Profile-->
+
+		<div class="contents" id="works">
+			<section>
+				<div class="caption">
+					<i class="material-icons web-icon">code</i><h2>Works</h2>
+				</div>
+				<div class="main-contents">
+					<p>
+						今まで私が開発に携わったものです。<br>
+						サムネイルをクリックすると詳細が表示されます。
+					</p>
+					<div>
+						<span id="detail-1" class="frame" style="background: url(img/portfolio_site.jpg ) center center no-repeat; background-size: cover;">
+							<dl class="frame-text">　<br>　</dl>
+						</span>
+						<span id="detail-2" class="frame" style="background: url(img/browserlabyrinth.web.fc2.jpg ) center center no-repeat; background-size: cover;">
+							<dl class="frame-text">　<br>　</dl>
+						</span>
+						<span id="detail-3" class="frame" style="background: #33CCFF">
+							<dl class="frame-text">ポータル<br>勤怠管理</dl>
+						</span>
+						<span id="detail-4" class="frame" style="background: #FF3399">
+							<dl class="frame-text">財務会計<br>システム</dl>
+						</span>
+					</div>
+				</div>
+			</section>
+
+			<section id="detail-1-section" class="details-area" style="display: none;">
+				<div class="caption">
+					<h2>Portfolio site</h2>
+				</div>
+				<div class="detail-content">
+					<ul class="product-info">
+						<li class="clearfix">
+							<p class="field pull-left">URL</p>
+							<p class="description pull-left"><a href="https://tarak0_2000.github.io/" target="_blank">https://tarak0_2000.github.io/</a></p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">ソースコード</p>
+							<p class="description pull-left"><a href="https://github.com/tarak0_2000/tarak0_2000.github.io" target="_blank">https://github.com/tarak0_2000/tarak0_2000.github.io</a></p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">説明</p>
+							<p class="description pull-left">
+								このサイトです。‹Works›でサムネイルをクリックすると詳細を表示する動きなどはjQueryで組み、レイアウトはスマホ表示にも最適化するようにレスポンシブなデザインを目指しました。
+							</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">使用した技術</p>
+							<p class="description pull-left">
+								<span class="logo">
+									<img src="img/Logo_HTML.png" alt="HTML">
+									<img src="img/Logo_CSS.png" alt="CSS">
+									<img src="img/Logo_jQuery.png" alt="jQuery">
+								</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="detail-2-section" class="details-area" style="display: none;">
+				<div class="caption">
+					<h2>Browser Labyrinth</h2>
+				</div>
+				<div class="detail-content">
+					<ul class="product-info">
+						<li class="clearfix">
+							<p class="field pull-left">URL</p>
+							<p class="description pull-left"><a href="http://browserlabyrinth.web.fc2.com/" target="_blank">http://browserlabyrinth.web.fc2.com/</a></p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">ソースコード</p>
+							<p class="description pull-left">非公開</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">説明</p>
+							<p class="description pull-left">
+								昔あった‹毒ガストンネル›というサイトに影響を受け、制作したブラウザの機能を使った謎解き脱出ゲームサイトです。<br>
+								攻略には基礎的なHTMLやブラウザなどのWeb知識が必要になります。<br>
+								さらにマニアックな知識を要するエクストラステージなども用意してありますので、Webに自信のある方も、そうでない方も是非一度遊んでみてください。
+							</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">使用した技術</p>
+							<p class="description pull-left">
+								<span class="logo">
+									<img src="img/Logo_HTML.png" alt="HTML">
+									<img src="img/Logo_CSS.png" alt="CSS">
+									<img src="img/Logo_JavaScript.png" alt="JavaScript">
+								</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="detail-3-section" class="details-area" style="display: none;">
+				<div class="caption">
+					<h2>勤怠管理ポータルサイト</h2>
+				</div>
+				<div class="detail-content">
+					<ul class="product-info">
+						<li class="clearfix">
+							<p class="field pull-left">URL</p>
+							<p class="description pull-left">非公開</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">ソースコード</p>
+							<p class="description pull-left">非公開</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">説明</p>
+							<p class="description pull-left">
+								現在、業務にて運用・開発を行っています。<br>
+								CGIシステム/UI開発・テスト実施/ケース作成・一部機能の設計を担当しました。<br>
+								勤怠入力/確認画面の時間計算処理や表示制御・休暇申請/承認処理・マスタメンテ機能の休暇作成処理・勤怠パターン設定処理・36協定や打刻漏れなどのアラート機能を主に実装しました。<br>
+								UI開発では、jQueryUIのSortableを使ったドラッグ＆ドロップで簡単に項目を移動できる機能や、JavaScriptによるクリック時の表示制御イベント、レスポンシブデザインなどを実装しました。
+							</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">使用した技術</p>
+							<p class="description pull-left">
+								<span class="logo">
+									<img src="img/Logo_Perl.png" alt="Perl">
+									<img src="img/Logo_HTML.png" alt="HTML">
+									<img src="img/Logo_CSS.png" alt="CSS">
+									<img src="img/Logo_jQuery.png" alt="jQuery">
+									<img src="img/Logo_SQL.png" alt="SQL">
+									<img src="img/Logo_CentOS.png" alt="CentOS">
+								</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="detail-4-section" class="details-area" style="display: none;">
+				<div class="caption">
+					<h2>財務会計システム</h2>
+				</div>
+				<div class="detail-content">
+					<ul class="product-info">
+						<li class="clearfix">
+							<p class="field pull-left">URL</p>
+							<p class="description pull-left">非公開</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">ソースコード</p>
+							<p class="description pull-left">非公開</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">説明</p>
+							<p class="description pull-left">
+								財務会計Webシステムの税率改定による機能修正に携わりました。<br>
+								CGI/UI修正・テスト実施/ケース作成を担当しました。<br>
+								ストアドプロシージャを使った仕訳/売掛・買掛残高作成処理の標準税率修正・軽減税率追加や、CGI・UI周りの修正などを行いました。<br>
+							</p>
+						</li>
+						<li class="clearfix">
+							<p class="field pull-left">使用した技術</p>
+							<p class="description pull-left">
+								<span class="logo">
+									<img src="img/Logo_Perl.png" alt="Perl">
+									<img src="img/Logo_HTML.png" alt="HTML">
+									<img src="img/Logo_CSS.png" alt="CSS">
+									<img src="img/Logo_SQL.png" alt="SQL">
+									<img src="img/Logo_CentOS.png" alt="CentOS">
+								</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+		<!--/Works-->
+
+		<footer>
+			<div class="caption">
+				<i class="material-icons web-icon">mail</i><h2>Contact</h2>
+			</div>
+			<a href="mailto:xisosan@gmail.com">
+				<img src="img/mail_ico.png" alt="Gmail">
+			</a>
+			<a href="https://github.com/tarak0_2000" target="_blank">
+				<img src="img/git_ico.png" alt="Git plofile">
+			</a>
+
+		</footer>
+
+		<!--背景用の画像の読み込み-->
+		<aside id="bg"><img src="img/bg.jpg" class="landscape"><img src="img/bg2.jpg" class="portrait"></aside>
+
+		<!--TOPへ戻るボタンの読み込み-->
+		<aside id="top-button">
+			<a href="#"><img src="img/top_ico.png" alt="TOPへ戻る"></a>
+		</aside>
+
+
+	</body>
+</html>
