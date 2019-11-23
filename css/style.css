@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form {
 	padding: 0px;
 	font-size: 100%;
 	font-weight: normal;
+	transform: rotate(0.001deg);/*IE・EdgeでWebフォントが乱れるので直す*/
 }
 ul {
 	list-style-type: none;
